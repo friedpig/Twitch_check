@@ -1,7 +1,7 @@
 {
-  "name": "checkchat",
+  "name": "Twitch_check",
   "version": "0.0.0",
-  "description": "checkchat",
+  "description": "Twitch_check",
   "main": "app.js",
   "author": {
     "name": "FriedPiG"
@@ -11,5 +11,8 @@
     "jade": "*",
     "request": "^2.79.0",
     "stylus": "*"
+  },
+  "scripts":{
+  	"start":"node app.js"
   }
 }
