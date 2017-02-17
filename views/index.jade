@@ -1,0 +1,16 @@
+﻿extends layout
+
+block content
+  div(class="container text-center col-md-4 col-md-offset-4")
+    h1 大家來抓內鬼~!
+    form(name="check",method="post",class="form-horizontal")
+      div(class="form-group")
+        div.input
+            label(class="control-label") 優良實況主：
+            input(class="form-control" type="text",name="nameA")
+        div.input
+            label(class="control-label") 惡劣實況主：
+            input(class="form-control" type="text",name="nameB")
+      div(class="form-group") 
+        div.action
+            input(type="submit", value ="抓內鬼！",class="btn btn-primary form-control ")

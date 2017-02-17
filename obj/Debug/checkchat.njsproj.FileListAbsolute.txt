@@ -1,0 +1,2 @@
+c:\users\friedpig\documents\visual studio 2015\Projects\checkchat\checkchat\obj\Debug\checkchat.njsprojResolveAssemblyReference.cache
+c:\users\friedpig\documents\visual studio 2015\Projects\checkchat\checkchat\bin\Microsoft.NodejsTools.WebRole.dll
