@@ -22,9 +22,11 @@ function check(req, res) {
                         for (var name in userB[type])
                             listB.push(userB[type][name]);
                     var listC = [];
-                    for (var i in listA)
-                        if (listB.indexOf(listA[i]) > -1)
-                            listC.push(listA[i]);
+                    for (var i in listA){
+                    	if(listA[i]!="jibot"&&listA[i]!="nightbot")
+                        	if (listB.indexOf(listA[i]) > -1)
+                            	listC.push(listA[i]);
+                    }
                     
                     res.render('Jade1', {list: listC });
                 }
