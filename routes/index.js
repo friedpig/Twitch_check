@@ -8,7 +8,6 @@ function index(req, res) {
 	if("second" in query){
 		queryName.second = query.second;
 	}
-	console.log(queryName);
     res.render('index',queryName);
 }
 exports.index = index;

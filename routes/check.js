@@ -2,7 +2,7 @@
 
 function check(req, res) {
     request({
-        url: 'https://tmi.twitch.tv/group/user/' + req.body.nameA + '/chatters',
+        url: 'https://tmi.twitch.tv/group/user/' + req.body.nameA.toLowerCase() + '/chatters',
         method: "GET"
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
@@ -12,7 +12,7 @@ function check(req, res) {
                 for (var name in userA[type])
                     listA.push(userA[type][name]);
             request({
-                url: 'https://tmi.twitch.tv/group/user/' + req.body.nameB + '/chatters',
+                url: 'https://tmi.twitch.tv/group/user/' + req.body.nameB.toLowerCase() + '/chatters',
                 method: "GET"
             }, function (error, response, body) {
                 if (!error && response.statusCode == 200) {
